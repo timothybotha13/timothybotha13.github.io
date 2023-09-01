@@ -1,0 +1,74 @@
+:root {
+    --c1: rgba(0,255,248,1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body {
+    background: rgb(51,8,44);
+    background: linear-gradient(90deg, rgba(51,8,44,1) 0%, rgba(110,9,121,1) 35%, var(--c1) 100%);  
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+}
+
+.fbcc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.defaultSize {
+    position: absolute;
+    height: 40vh;
+    width: 40vw !important;
+    border-radius: 0.83vw;
+}
+
+#island {
+    background: rgba(255, 255, 255, 0.097);
+}
+
+textarea {
+    background: none;
+    /* border: 0.2vw solid white; */
+    outline: none;
+    border: none;
+    border-radius: 0.83vw;
+    width: 35vw;
+    height: 25vh;
+    color: white;
+    padding: 1vh 1vw;
+    font-size: 1.2rem;
+    resize: none;
+}
+
+*::placeholder {
+    color: white;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 0.14vw solid white;
+    padding: 0.2vh 1vw;
+    color: white;
+    font-size: 1.35rem;
+    cursor: pointer;
+    transition: 350ms ease;
+}
+
+button:hover {
+    padding: 0.2vh 1.4vw;
+    color: var(--c1);
+    border-bottom: 0.14vw solid var(--c1);
+}

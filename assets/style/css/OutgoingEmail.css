@@ -1,0 +1,62 @@
+.OutgoingEmailElement {
+    width: 100%;
+    height: auto;
+    margin: 4vh 0;
+    padding: 1vh 0;
+    font-size: 1.2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.OutgoingEmailTextarea {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.OutgoingEmailElement label {
+    width: 55%;
+    text-decoration: underline;
+    text-decoration-color: var(--accent-2);
+    font-size: 1.3vw;
+    margin-right: 5%;
+}
+
+.OutgoingEmailElement input[type="text"] {
+    width: 35%;
+    background: none;
+    color: var(--font-colour);
+    border: 0.1vw solid var(--accent-2);
+    border-radius: 0.3vw;
+    padding: 0.3vh 1vw;
+    font-size: 1.3vw;
+}
+
+
+.OutgoingEmailElement input[type="checkbox"] {
+    background: var(--accent-2);
+}
+
+.OutgoingEmailElement textarea {
+    width: 40vw;
+    height: 20vh;
+    background: none;
+    color: var(--font-colour);
+    border: 0.1vw solid var(--accent-2);
+    border-radius: 0.3vw;
+    padding: 0.3vh 1vw;
+    margin-top: 3vh;
+    font-size: 1.3vw;    
+    padding: 1.3vh 1vw;
+    resize: both;
+}
+
+#RequestMDSInfo {
+    font-size: 1.5vw;
+}
+
+#RequestMDSWarning {
+    font-size: 1.3vw;
+    color: var(--accent-2);
+}

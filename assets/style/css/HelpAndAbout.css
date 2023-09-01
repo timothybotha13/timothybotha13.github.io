@@ -1,0 +1,21 @@
+#HelpAndAbout {
+    position: absolute;
+    bottom: 5vh;
+}
+
+.HelpAndAboutContainer {
+    margin: 5vh 0;
+}
+
+.HelpAndAboutContainer p {
+    margin: 3vh 0;
+    font-size: 1.3vw;
+}
+
+.HelpAndAboutContainer p span {
+    color: var(--accent-2);
+}
+
+.HelpAndAboutContainer a {
+    color: var(--accent-4);
+}

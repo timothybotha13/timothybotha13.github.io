@@ -1,0 +1,23 @@
+/* .PhoneNumberContainer {
+    
+} */
+
+.PhoneNumberContainer h3 {
+    font-size: 2vw;
+    color: var(--accent-2);
+    text-decoration: underline;
+    margin: 5vh 0;
+}
+
+.PhoneNumberContainer h4 {
+    font-size: 1.4vw;
+    margin: 2vh 0;
+}
+
+.PhoneNumberContainer ul {
+    margin: 2vh 3vw;
+}
+
+.PhoneNumberContainer ul li {
+    font-size: 1.1vw;
+}

@@ -1,0 +1,172 @@
+:root {
+    --background: rgb(14, 13, 13);
+    --accent-1: rgb(43, 41, 41);
+    --accent-2: #ff7e26;
+    --accent-3: rgb(42, 255, 42);
+    --accent-4: rgb(29, 191, 255);
+    --accent-5: red;
+    --accent-6: rgb(63, 62, 62);
+    --font-colour: white;
+    --font: 'Roboto', sans-serif;
+    --normal-tran-speed: 400ms;
+    --fast-tran-speed: 200ms;
+    --slow-tran-speed: 650ms;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background);
+    color: var(--font-colour);
+    height: auto;
+}
+
+#Canvas {
+    position: absolute;
+    top: 0;
+    left: 15vw;
+    padding: 2vh 5vw;
+    width: 60vw;
+    height: auto;
+}
+
+#Menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 15vw;
+    background: var(--accent-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5vh;
+    border-right: 0.1vw solid var(--font-colour);
+}
+
+.MenuButton {
+    border: 0.2vw solid var(--font-colour); 
+    padding: 1vh 1vw;
+    border-radius: 0.3vw;
+    margin: 2vh 0;
+    width: 85%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1vw;
+    transition: var(--fast-tran-speed) ease;
+    user-select: none;
+}
+
+.MenuButton:hover {
+    background: var(--accent-6);
+    border: 0.2vw solid var(--accent-4);
+    width: 90%;
+}
+
+.Selected {
+    border: 0.2vw solid var(--accent-3);
+}
+
+#BreadBin {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: -999;
+}
+
+.Toast {
+    width: 80%;
+    height: auto;
+    padding: 2vh 1vw;
+    background: var(--accent-6);
+    margin: 3vh 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Toast h2 {
+    font-size: 1.2vw;
+}
+
+.Toast hr {
+    height: 2%;
+    width: 100%;
+    background: var(--font-colour);
+    margin: 0.2vh 0 1.5vh 0;
+}
+
+.Toast p {
+    font-size: 1vw;
+}
+
+.ToastError {
+    border-top: 1vh solid var(--accent-5);
+}
+
+.ToastSuccess {
+    border-top: 1vh solid var(--accent-3);
+}
+
+.ToastInfo {
+    border-top: 1vh solid var(--accent-4);
+}
+
+.CopyButton {
+    width: 15vw;
+    background: none;
+    color: var(--font-colour);
+    border: 0.2vw solid var(--accent-2);
+    border-radius: 0.4vw;;
+    padding: 0.5vh 1vw;
+    font-size: 1.1vw;
+    cursor: pointer;
+    transition: var(--fast-tran-speed);
+}
+
+.CopyButton:hover {
+    border: 0.2vw solid var(--accent-4);
+    background: var(--accent-6);
+    width: 17vw;
+}
+
+#MobileWarning {
+    display: none;
+}
+
+@media only screen and (max-width: 100px) {
+
+    #MobileWarning {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        padding: 10vh 10vw;
+        font-size: 7vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--background);
+        color: var(--accent-4);
+    }
+
+    #Canvas, #BreadBin, #Menu {
+        display: none;
+    }
+}

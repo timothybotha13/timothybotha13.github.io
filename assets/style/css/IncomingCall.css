@@ -1,0 +1,61 @@
+#IncomingCallIntro {
+    font-size: 1.5vw;
+    color: var(--font-colour);
+}
+
+#IncomingCallUsername {
+    text-decoration: underline;
+    color: var(--accent-2);
+    cursor: pointer;
+    transition: var(--fast-tran-speed);
+}
+
+#IncomingCallUsername:hover {
+    color: var(--accent-4);
+}
+
+.IncomingCallElement {
+    width: 90%;
+    height: auto;
+    margin: 4vh 0;
+    padding: 1vh 0;
+    font-size: 1.2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.IncomingCallElement label {
+    width: 40vw;
+    text-decoration: underline;
+    text-decoration-color: var(--accent-2);
+    font-size: 1.3vw;
+    margin-bottom: 3vh;
+}
+
+.IncomingCallElement input[type="text"], .IncomingCallElement input[type="date"], .IncomingCallElement textarea {
+    width: 40vw;
+    background: none;
+    color: var(--font-colour);
+    border: 0.1vw solid var(--accent-2);
+    border-radius: 0.3vw;
+    padding: 0.3vh 1vw;
+    font-size: 1.3vw;
+}
+
+.IncomingCallElement input[type="text"] {
+    height: 5vh;
+}
+
+.IncomingCallElement textarea {
+    height: 20vh;
+    padding: 1.3vh 1vw;
+    resize: vertical;
+}
+
+.IncomingCallElement input[type="date"] {
+    width: 12vw;
+    font-size: 1.1vw;
+    color-scheme: dark;
+}
+
